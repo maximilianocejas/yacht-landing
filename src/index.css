@@ -1,0 +1,76 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+:root {
+  --color-primary: #FFFFFF;
+  --color-secondary: #2E2D2C;
+  --color-gradient: #0D244E;
+}
+@font-face {
+  font-family: 'Helvetica';
+  src: url('/public/fonts/HelveticaNeueLTStd-Bd.otf');
+  font-weight: 700;
+}
+@font-face {
+  font-family: 'Helvetica';
+  src: url('/public/fonts/HelveticaNeueLTStd-Bd.otf') format('opentype');
+  font-weight: 500;
+}
+@font-face {
+  font-family: 'Helvetica';
+  src: url('/fonts/HelveticaNeueLTStd-Ex.otf');
+  font-weight: 400;
+}
+@font-face {
+  font-family: 'Helvetica';
+  src: url('/fonts/HelveticaNeueLTStd-Lt.otf');
+  font-weight: 300;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  color: var(--color-secondary);
+}
+
+
+.button__black{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+  border-radius: 999px;
+  font-weight: 500;
+  border: 1px solid var(--color-secondary);
+  outline: none;
+  font-size: 20px;
+  padding: 15px 45px;
+}
+.button__white{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+  border-radius: 999px;
+  text-transform: uppercase;
+  font-weight: 400;
+  color: var(--color-primary);
+  border: 1px solid var(--color-primary);
+  outline: none;
+  font-size: 20px;
+  padding: 15px 45px;
+}
+
+.button__black-icon{
+  width: 24px;
+  margin-left: 10px;
+}
+
+
+.button__white-icon{
+  width: 24px;
+  margin-left: 10px;
+}

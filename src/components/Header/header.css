@@ -1,0 +1,115 @@
+.header{
+    font-family: Helvetica;
+    position: relative;
+    width: full;
+    height: 100vh;
+    overflow: hidden;
+}
+.nav{
+    height: 80px;
+    padding: 0 40px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+}
+.nav__logo-container{
+    display: flex;
+    align-items: center;
+}
+.nav__list-container{
+    display: flex;
+    align-items: center;
+}
+.nav__button-container{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+.nav__list{
+    display: flex;
+    column-gap: 30px;
+}
+.nav__list-item{
+    color: var(--color-secondary)
+}
+
+.hero{
+    padding: 0 40px;
+}
+.hero__text-container{
+    position: fixed;
+    left: 40px;
+    top: 100px;
+}
+.hero__title{
+    text-transform: uppercase;
+    font-size: 5rem;
+    font-weight: 300;
+}
+
+.hero__subtitle{
+    font-size: 1rem;
+    font-weight: 300;
+}
+
+.header__button{
+    margin-top: 16px;
+}
+
+.header__img{
+    position: fixed;
+    width: 700px;
+    height: 700px;
+    bottom: 50px;
+    right: 0;
+}
+
+
+.video{
+    clip-path:  inset(0px calc(18.33% - 18.33px) 0px round 8px);
+}
+
+.overlay{
+    clip-path:  inset(0px calc(18.33% - 18.33px) 0px round 8px);
+    background-color: #000;
+    z-index: 1;
+    opacity: 0.3;
+}
+
+.video__content-text{
+    font-family: Helvetica;
+    text-align: center;
+
+    opacity: 0;
+    font-weight: 300;
+    font-size: 64px;
+    color: var(--color-primary);
+}
+.button-video{
+    opacity: 0;
+    position: relative;
+    transition-duration: 200ms;
+}
+
+
+.button-video::after{
+    content: '';
+    background-color: #fff;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: -100%;
+    z-index: -1;
+    left: 0;
+    transition-duration: 250ms;
+}
+
+.button-video:hover::after{
+    transform: translateY(100%);
+}
+.button-video:hover{
+    color: #2E2D2C;
+}
+.button-video:hover .button__white-icon{
+    filter: invert(0%) sepia(91%) saturate(7492%) hue-rotate(45deg) brightness(10%) contrast(95%)
+}
