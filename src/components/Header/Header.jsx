@@ -12,50 +12,53 @@ export default function Header() {
     useEffect(() => {
         let tl = gsap.timeline();
         let video = document.querySelector(".video");
-        // tl.to(".video",{
-        //     duration: 1,
-        //     clipPath: "inset(0px 0px 0px round 8px)"
-        // })
+
       
         tl.to(".video__section",{
           top: 0,
-          left: 0
+          left: 0,
+
         })
         tl.to(".video",{
           duration: 1,
-          clipPath: 'inset(0px calc(0px) 0px round 0px)'
+          clipPath: 'inset(0px calc(0px) 0px round 0px)',
+
         },0)
         tl.to(".overlay",{
           duration: 1,
-          clipPath: 'inset(0px calc(0px) 0px round 0px)'
+          clipPath: 'inset(0px calc(0px) 0px round 0px)',
         },"-=1")
         tl.to(".nav",{
-          translateY: '-100px'
+          translateY: '-100px',
         },0)
         tl.to(".video__content-container",{
-          display: 'flex'
+          display: 'flex',
         },"-=1")
         tl.to(".video__content-text",{
           duration: 0.5,
-          opacity: 1
+          opacity: 1,
+
         },"+=0.5")
         tl.to(".button-video",{
           duration: 0.5,
           opacity: 1
         },"-=0.5")
-        ScrollTrigger.create({
-          trigger: ".header",
-          animation: tl,
-          start: "bottom bottom",
-          end: "+=800",
-          pin: true,
-          scrub: 2,
-          markers: true,
+
+        tl.to(".header",{
           onUpdate: () => {
             if (video) {
               video.play();
             }
-          },
+          }
+        },"-=1.75")
+        ScrollTrigger.create({
+          trigger: ".header",
+          animation: tl,
+          start: "bottom bottom",
+          end: "+=900",
+          pin: true,
+          scrub: 2,
+          markers: true,
         });
       }, []);
   return (

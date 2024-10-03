@@ -74,3 +74,7 @@
   width: 24px;
   margin-left: 10px;
 }
+
+.engagement-text{
+  font-size: clamp(0px,3.132vw,60px)
+}
