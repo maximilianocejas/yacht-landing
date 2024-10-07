@@ -33,7 +33,7 @@ export default function Carousel() {
             <article className="relative h-full flex items-center w-full bg-primary overflow-hidden">
 
                 <div className=" w-full h-full" >
-                    <div className=" flex carousel-inner duration-1000 ease-in-out w-full h-[90vh]">
+                    <div className=" flex carousel-inner duration-1000 ease-in-out w-full h-full">
                    <div className="flex-none carousel-item w-full h-full relative">
                         <img className="w-full h-full object-cover" src="./images/carousel/1.avif" alt="Servicio 1" />
                     </div>
@@ -45,10 +45,10 @@ export default function Carousel() {
                     </div>
                    </div>
                    </div>
-                <div id="next" className="absolute size-[100px] cursor-pointer flex justify-center items-center rounded-full bg-secondary bg-blur left-10 opacity-70 hover:opacity-100 next-button">
+                <div id="before" className="absolute size-[100px] cursor-pointer flex justify-center items-center rounded-full bg-secondary bg-blur left-10 opacity-70 hover:opacity-100 next-button">
                     <img className="rotate-180" src="./icons/arrow-white-lg.svg" alt="" />
                 </div>
-                <div id="before" className="absolute size-[100px] cursor-pointer flex justify-center items-center rounded-full bg-secondary bg-blur top-[calc(50%-50px)] opacity-70 hover:opacity-100 right-10 before-button">
+                <div id="next" className="absolute size-[100px] cursor-pointer flex justify-center items-center rounded-full bg-secondary bg-blur top-[calc(50%-50px)] opacity-70 hover:opacity-100 right-10 before-button">
                     <img src="./icons/arrow-white-lg.svg" alt="" />
                 </div>
             </article>

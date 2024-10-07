@@ -13,7 +13,9 @@ export default function Header() {
         let tl = gsap.timeline();
         let video = document.querySelector(".video");
 
-      
+      tl.from('.video__section',{
+        top: "95%"
+      })
         tl.to(".video__section",{
           top: 0,
           left: 0,
@@ -111,7 +113,7 @@ export default function Header() {
         </div>
 
     {/* Scroll video */}
-    <section className="video__section h-full w-full absolute top-[95%]">
+    <section className="video__section h-full w-full absolute">
       <div className="h-full w-full relative flex flex-col justify-center items-center">
       <div className="overlay absolute w-full h-full top-0 left-0"></div>
         <video className="video h-full w-full object-cover absolute top-0 left-0" muted loop>

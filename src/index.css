@@ -42,12 +42,13 @@
   justify-content: center;
   align-items: center;
   background-color: transparent;
+  text-transform: uppercase;
   border-radius: 999px;
-  font-weight: 500;
+  font-weight: 400;
   border: 1px solid var(--color-secondary);
   outline: none;
-  font-size: 20px;
-  padding: 15px 45px;
+  font-size: 16px;
+  padding: 8px 24px;
 }
 .button__white{
   display: flex;
@@ -60,8 +61,8 @@
   color: var(--color-primary);
   border: 1px solid var(--color-primary);
   outline: none;
-  font-size: 20px;
-  padding: 15px 45px;
+  font-size: 16px;
+  padding: 8px 24px;
 }
 
 .button__black-icon{
