@@ -40,19 +40,53 @@ export default function Benefits(){
     },[])
     return(
         <section className="relative h-screen w-full scroll-container overflow-hidden">
-            <div className="absolute top-0 left-0 w-full h-screen z-10 scroll-1 ">
+            <div className="absolute top-0 left-0 w-full h-screen z-10 scroll-1 flex justify-center items-center">
                 
-                <img className="w-full h-full object-cover" src="./images/scroll/scroll-1.png" alt="" />
+             <div>
+                 
+             <h3 className="text-8xl uppercase text-white">elegancia desde<br/>el primer vistazo</h3>
+                          <button className="button__white mx-auto mt-6 button-video overflow-hidden">
+            reservar
+            <img
+              className="button__white-icon"
+              src="/icons/arrow-white.svg"
+              alt="Arrow white"
+            />
+          </button>
+             </div>
             </div>
-            <div className="absolute left-0 w-full h-screen z-20 scroll-2">
+            <div className="absolute left-0 w-full h-screen z-20 scroll-2 flex justify-center items-center">
                 
-                <img className="w-full h-full object-cover" src="./images/scroll/scroll-2.png" alt="" />
-            </div>
-            <div className="absolute left-0 w-full h-screen z-30 scroll-3">
+        <div>
             
-                <img className="w-full h-full object-cover" src="./images/scroll/scroll-3.png" alt="" />
+        <h3 className="text-8xl uppercase text-white">navega con estilo<br/>dia y noche</h3>
+                          <button className="button__white mx-auto mt-6 button-video overflow-hidden">
+            reservar
+            <img
+              className="button__white-icon"
+              src="/icons/arrow-white.svg"
+              alt="Arrow white"
+            />
+          </button>
+        </div>
             </div>
-            <div className="bg-[rgba(0,0,0,.35)] w-full h-full top-0 left-0 z-40 absolute"></div>
+            <div className="absolute left-0 w-full h-screen z-30 scroll-3 flex justify-center items-center">
+            
+            
+               <div>
+                   
+               <h3 className="text-8xl uppercase text-white">lujo y confort<br/>en cada detalle</h3>
+                          <button className="button__white button-video mx-auto mt-6 overflow-hidden">
+            reservar
+            <img
+              className="button__white-icon"
+              src="/icons/arrow-white.svg"
+              alt="Arrow white"
+            />
+          </button>
+               </div>
+            </div>
+            
             <div className="absolute flex flex-col w-2 gap-y-2 h-[174px] right-10 top-[calc(50%-87px)] z-50">
                 <span className="w-[5px] h-[50px] bg-white line-1"></span>
                 <span className="w-[5px] h-[50px] bg-white opacity-20 line-2"></span>

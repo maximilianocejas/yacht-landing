@@ -14,8 +14,8 @@ function App() {
     <>
       <Header/>
       <Yacht/>
-      <Engagement/>
       <Carousel/>
+      <Engagement/>
       <Benefits/>
     </>
   )
