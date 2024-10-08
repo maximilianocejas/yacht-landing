@@ -44,7 +44,7 @@ export default function Benefits(){
                 
              <div>
                  
-             <h3 className="text-8xl uppercase text-white">elegancia desde<br/>el primer vistazo</h3>
+             <h3 className="text-8xl uppercase text-white font-normal">elegancia</h3>
                           <button className="button__white mx-auto mt-6 button-video overflow-hidden">
             reservar
             <img
@@ -59,7 +59,7 @@ export default function Benefits(){
                 
         <div>
             
-        <h3 className="text-8xl uppercase text-white">navega con estilo<br/>dia y noche</h3>
+        <h3 className="text-8xl uppercase text-white font-normal">navega con estilo</h3>
                           <button className="button__white mx-auto mt-6 button-video overflow-hidden">
             reservar
             <img
@@ -75,7 +75,7 @@ export default function Benefits(){
             
                <div>
                    
-               <h3 className="text-8xl uppercase text-white">lujo y confort<br/>en cada detalle</h3>
+               <h3 className="text-8xl uppercase text-white font-normal">lujo y confort</h3>
                           <button className="button__white button-video mx-auto mt-6 overflow-hidden">
             reservar
             <img

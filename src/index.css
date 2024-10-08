@@ -85,19 +85,19 @@
 }
 
 .scroll-1{
-  background: linear-gradient(to bottom,rgba(0,0,0,.35),rgba(0,0,0,.20)),url('./images/scroll/scroll-1.png');
+  background: linear-gradient(to bottom,rgba(0,0,0,.35),rgba(0,0,0,.20)),url('../public/images/scroll/scroll-1.png');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
 .scroll-2{
-  background: linear-gradient(to bottom,rgba(0,0,0,.35),rgba(0,0,0,.20)),url('./images/scroll/scroll-2.png');
+  background: linear-gradient(to bottom,rgba(0,0,0,.35),rgba(0,0,0,.20)),url('../public/images/scroll/scroll-2.png');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
 .scroll-3{
-  background: linear-gradient(to bottom,rgba(0,0,0,.35),rgba(0,0,0,.20)),url('./images/scroll/scroll-3.png');
+  background: linear-gradient(to bottom,rgba(0,0,0,.35),rgba(0,0,0,.20)),url('../public/images/scroll/scroll-3.png');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
