@@ -8,8 +8,11 @@ export default function Benefits(){
 
     useEffect(()=>{
         let tl = gsap.timeline()
+        tl.from('.scroll-1',{
+            top: 0,
+        })
         tl.from('.scroll-2',{
-            top: '100%'
+            top: '100%',
         })
         tl.from('.scroll-3',{
             top: '100%'
@@ -18,13 +21,9 @@ export default function Benefits(){
             top: 0,
             
         })
-        tl.to('.line-1',{opacity: 0.2},0)
-        tl.to('.line-2',{opacity: 1},0)
         tl.to('.scroll-3',{
             top: 0,
         })
-        tl.to('.line-2',{opacity: 0.2},0.5)
-        tl.to('.line-3',{opacity: 1},0.5)
 
 
 
@@ -32,8 +31,8 @@ export default function Benefits(){
             animation: tl,
             trigger: '.scroll-container',
             start: "top top",
-            end: "+=3000",
-            scrub: 3,
+            end: "+=2800",
+            scrub: 2,
             pin: true
         })
 
@@ -46,7 +45,7 @@ export default function Benefits(){
                  
              <h3 className="text-8xl uppercase text-white font-normal">elegancia</h3>
                           <button className="button__white mx-auto mt-6 button-video overflow-hidden">
-            reservar
+            reservar ahora
             <img
               className="button__white-icon"
               src="/icons/arrow-white.svg"
@@ -61,7 +60,7 @@ export default function Benefits(){
             
         <h3 className="text-8xl uppercase text-white font-normal">navega con estilo</h3>
                           <button className="button__white mx-auto mt-6 button-video overflow-hidden">
-            reservar
+            reservar ahora
             <img
               className="button__white-icon"
               src="/icons/arrow-white.svg"
@@ -77,7 +76,7 @@ export default function Benefits(){
                    
                <h3 className="text-8xl uppercase text-white font-normal">lujo y confort</h3>
                           <button className="button__white button-video mx-auto mt-6 overflow-hidden">
-            reservar
+            reservar ahora
             <img
               className="button__white-icon"
               src="/icons/arrow-white.svg"
@@ -87,11 +86,6 @@ export default function Benefits(){
                </div>
             </div>
             
-            <div className="absolute flex flex-col w-2 gap-y-2 h-[174px] right-10 top-[calc(50%-87px)] z-50">
-                <span className="w-[5px] h-[50px] bg-white line-1"></span>
-                <span className="w-[5px] h-[50px] bg-white opacity-20 line-2"></span>
-                <span className="w-[5px] h-[50px] bg-white opacity-20 line-3"></span>
-            </div>
         </section>
     )
 }

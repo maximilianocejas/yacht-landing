@@ -44,11 +44,10 @@
   background-color: transparent;
   text-transform: uppercase;
   border-radius: 999px;
-  font-weight: 400;
   border: 1px solid var(--color-secondary);
   outline: none;
-  font-size: 16px;
-  padding: 8px 24px;
+  font-size: 13px;
+  padding: 12px 20px;
 }
 .button__white{
   display: flex;
@@ -57,28 +56,24 @@
   background-color: transparent;
   border-radius: 999px;
   text-transform: uppercase;
-  font-weight: 400;
   color: var(--color-primary);
   border: 1px solid var(--color-primary);
   outline: none;
-  font-size: 16px;
-  padding: 8px 24px;
+  font-size: 13px;
+  padding: 12px 20px;
 }
 
 .button__black-icon{
   width: 24px;
-  margin-left: 10px;
+  margin-left: 16px;
 }
 
 
 .button__white-icon{
   width: 24px;
-  margin-left: 10px;
+  margin-left: 16px;
 }
 
-.engagement-text{
-  font-size: clamp(0px,3.132vw,60px)
-}
 
 .bg-blur{
   backdrop-filter: blur(100px);
@@ -101,4 +96,14 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+
+.yacht-radial{
+  position: absolute;
+  top: calc(50% - 200px);
+  left: calc(50% - 300px);
+  width: 600px;
+  height: 600px;
+  background: radial-gradient(circle, rgba(35, 92, 197, 0.35) 0%, #FFFFFF 70%);
 }

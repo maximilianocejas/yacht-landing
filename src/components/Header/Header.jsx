@@ -60,7 +60,6 @@ export default function Header() {
           end: "+=900",
           pin: true,
           scrub: 2,
-          markers: true,
         });
       }, []);
   return (
@@ -79,7 +78,7 @@ export default function Header() {
           </div>
           <div className="nav__button-container">
             <button className="button__black">
-              Contacto
+              contactarse
               <img
                 className="button__black-icon"
                 src="./icons/arrow-black.svg"
@@ -88,15 +87,19 @@ export default function Header() {
             </button>
           </div>
         </nav>
-        <section className="hero">
-          <div className="hero__text-container">
+        <section className="hero flex justify-center items-center w-full ">
+          <div className="hero__text-container mx-auto w-full flex justify-center flex-col items-center">
+            <div className="relative">
             <h1 className="hero__title">seaway</h1>
-            <h2 className="hero__subtitle">
+            <h2 className="hero__subtitle text-center absolute ">
               Obtén la mejor calidad y las mejores experiencias
               <br /> con nuestros yates de lujo
             </h2>
+            </div>
+            
+            
             <button className="button__black header__button">
-              Contacto
+              contactarse ahora
               <img
                 className="button__black-icon"
                 src="/icons/arrow-black.svg"
@@ -105,11 +108,7 @@ export default function Header() {
             </button>
           </div>
         </section>
-        <img
-          className="header__img"
-          src="/images/header-img.svg"
-          alt="Yacht Header"
-        />
+
         </div>
 
     {/* Scroll video */}
@@ -125,7 +124,7 @@ export default function Header() {
             <br /> Navega de forma rápida y segura
           </h2>
           <button className="button__white button-video overflow-hidden">
-            reservar
+            reservar ahora
             <img
               className="button__white-icon"
               src="/icons/arrow-white.svg"

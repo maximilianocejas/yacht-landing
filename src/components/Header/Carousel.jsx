@@ -23,7 +23,7 @@ export default function Carousel() {
             console.log('anterior')
             updateCarousel()
         }
-        console.log(-indexCurrent * 100)
+        
         document.getElementById('next').addEventListener('click',showNext)
         document.getElementById('before').addEventListener('click',showPrev)
         

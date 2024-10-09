@@ -1,3 +1,4 @@
+import Contact from "./components/Contact"
 import Benefits from "./components/Header/Benefits"
 import Carousel from "./components/Header/Carousel"
 import Engagement from "./components/Header/Engagement"
@@ -17,6 +18,7 @@ function App() {
       <Carousel/>
       <Engagement/>
       <Benefits/>
+      <Contact/>
     </>
   )
 }
