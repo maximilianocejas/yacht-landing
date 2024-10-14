@@ -3,6 +3,8 @@ import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 import { useEffect } from "react";
+import Nav from "../Nav";
+import NavMobile from "../NavMobile";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -10,84 +12,70 @@ gsap.registerPlugin(ScrollTrigger);
 
 export default function Header() {
     useEffect(() => {
-        let tl = gsap.timeline();
-        let video = document.querySelector(".video");
+        let mm = gsap.matchMedia();
 
-      tl.from('.video__section',{
-        top: "95%"
-      })
-        tl.to(".video__section",{
-          top: 0,
-          left: 0,
+  mm.add("(min-width: 768px)", () => {
+    let tlDesktop = gsap.timeline();
+    let video = document.querySelector(".video");
 
-        })
-        tl.to(".video",{
-          duration: 1,
-          clipPath: 'inset(0px calc(0px) 0px round 0px)',
+    tlDesktop.from('.video__section', {
+      top: "95%"
+    })
+    .to(".video__section", {
+      top: 0,
+      left: 0,
+    })
+    .to(".video", {
+      duration: 1,
+      clipPath: 'inset(0px calc(0px) 0px round 0px)',
+    }, 0)
+    .to(".overlay", {
+      duration: 1,
+      clipPath: 'inset(0px calc(0px) 0px round 0px)',
+    }, "-=1")
+    .to(".nav", {
+      translateY: '-100px',
+    }, 0)
+    .to(".video__content-container", {
+      display: 'flex',
+    }, "-=1")
+    .to(".video__content-text", {
+      duration: 0.5,
+      opacity: 1,
+    }, "+=0.5")
+    .to(".button-video", {
+      duration: 0.5,
+      opacity: 1
+    }, "-=0.5")
+    .to(".header", {
+      onUpdate: () => {
+        if (video) {
+          video.play();
+        }
+      }
+    }, "-=1.75");
 
-        },0)
-        tl.to(".overlay",{
-          duration: 1,
-          clipPath: 'inset(0px calc(0px) 0px round 0px)',
-        },"-=1")
-        tl.to(".nav",{
-          translateY: '-100px',
-        },0)
-        tl.to(".video__content-container",{
-          display: 'flex',
-        },"-=1")
-        tl.to(".video__content-text",{
-          duration: 0.5,
-          opacity: 1,
+    ScrollTrigger.create({
+      trigger: ".header",
+      animation: tlDesktop,
+      start: "bottom bottom",
+      end: "+=800",
+      pin: true,
+      scrub: 2,
+    });
+  });
 
-        },"+=0.5")
-        tl.to(".button-video",{
-          duration: 0.5,
-          opacity: 1
-        },"-=0.5")
-
-        tl.to(".header",{
-          onUpdate: () => {
-            if (video) {
-              video.play();
-            }
-          }
-        },"-=1.75")
-        ScrollTrigger.create({
-          trigger: ".header",
-          animation: tl,
-          start: "bottom bottom",
-          end: "+=900",
-          pin: true,
-          scrub: 2,
-        });
-      }, []);
+  
+}, []);
+      
+    
   return (
     <>
       <header className="header">
-        <div className="absolute w-full h-screen top-0 left-0">
-        <nav className="nav">
-          <div className="nav__logo-container"></div>
-          <div className="nav__list-container">
-            <ul className="nav__list">
-              <li className="nav__list-item">Inicio</li>
-              <li className="nav__list-item">Destinos</li>
-              <li className="nav__list-item">Servicios</li>
-              <li className="nav__list-item">Galería</li>
-            </ul>
-          </div>
-          <div className="nav__button-container">
-            <button className="button__black">
-              contactarse
-              <img
-                className="button__black-icon"
-                src="./icons/arrow-black.svg"
-                alt="Arrow black"
-              />
-            </button>
-          </div>
-        </nav>
-        <section className="hero flex justify-center items-center w-full ">
+        <div className="sm:absolute w-full h-screen sm:top-0 sm:left-0">
+        <Nav/>
+        <NavMobile/>
+        <section className="hero flex justify-center items-center w-full pt-20 sm:pt-0">
           <div className="hero__text-container mx-auto w-full flex justify-center flex-col items-center">
             <div className="relative">
             <h1 className="hero__title">seaway</h1>
@@ -112,13 +100,13 @@ export default function Header() {
         </div>
 
     {/* Scroll video */}
-    <section className="video__section h-full w-full absolute">
+    <section className="video__section h-screen w-full sm:h-full sm:w-full sm:absolute">
       <div className="h-full w-full relative flex flex-col justify-center items-center">
       <div className="overlay absolute w-full h-full top-0 left-0"></div>
         <video className="video h-full w-full object-cover absolute top-0 left-0" muted loop>
           <source src="/video/video.mp4" type="video/mp4" />
         </video>
-        <div className="video__content-container hidden justify-center items-center flex-col z-10">
+        <div className="video__content-container sm:hidden justify-center items-center flex-col z-10">
           <h2 className="video__content-text">
             ¡No pierdas mas tiempo!
             <br /> Navega de forma rápida y segura

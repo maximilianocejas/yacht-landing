@@ -8,7 +8,6 @@
     height: 80px;
     padding: 0 40px;
     width: 100%;
-    display: grid;
     grid-template-columns: repeat(3,1fr);
 }
 .nav__logo-container{
@@ -60,22 +59,9 @@
 }
 
 
-
-.video{
-    clip-path:  inset(0px calc(18.33% - 18.33px) 0px round 8px);
-}
-
-.overlay{
-    clip-path:  inset(0px calc(18.33% - 18.33px) 0px round 8px);
-    background-color: #000;
-    z-index: 1;
-    opacity: 0.3;
-}
-
 .video__content-text{
     font-family: Helvetica;
     text-align: center;
-
     opacity: 0;
     font-weight: 300;
     font-size: 64px;
@@ -109,4 +95,73 @@
 }
 .button-video:hover .button__white-icon{
     filter: invert(0%) sepia(91%) saturate(7492%) hue-rotate(45deg) brightness(10%) contrast(95%)
+}
+
+.video{
+    clip-path:  inset(0px calc(18.33% - 18.33px) 0px round 8px);
+}
+
+.overlay{
+    clip-path:  inset(0px calc(18.33% - 18.33px) 0px round 8px);
+    background-color: #000;
+    z-index: 1;
+    opacity: 0.3;
+}
+
+@media (max-width: 768px){
+   .header{
+    height: auto;
+    display: flex;
+    flex-direction: column;
+   }
+   .hero__text-container{
+    position: inherit;
+    z-index: -1;
+}
+  
+    .header__button{
+        margin-top: 50px;
+    }
+    .hero{
+        padding: 0 16px;
+    }
+    
+    .hero__title{
+        text-transform: uppercase;
+        font-size: 4.5rem;
+        font-weight: 300;
+    }
+    
+    .hero__subtitle{
+        top: 120%;
+        left: 50%;
+        width: 100%;
+        font-size: 0.8rem;
+        font-weight: 300;
+        transform: translate(-50%, -50%)
+    }
+    .video{
+        clip-path:  inset(0px calc(1.33% - 18.33px) 0px round 8px);
+    }
+    .video__content-text{
+        font-family: Helvetica;
+        text-align: center;
+        opacity: 1;
+        font-weight: 300;
+        font-size: 24px;
+        color: var(--color-primary);
+    }
+    .button-video{
+        opacity: 1;
+        position: relative;
+        transition-duration: 200ms;
+        margin: auto;
+        margin-top: 16px;
+    }
+    .overlay{
+        clip-path:  inset(0px calc(1.33% - 18.33px) 0px round 8px);
+        background-color: #000;
+        z-index: 1;
+        opacity: 0.3;
+    }
 }

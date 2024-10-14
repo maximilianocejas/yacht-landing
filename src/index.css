@@ -36,7 +36,9 @@
   color: var(--color-secondary);
 }
 
-
+body.no-scroll{
+  overflow: hidden;
+}
 .button__black{
   display: flex;
   justify-content: center;

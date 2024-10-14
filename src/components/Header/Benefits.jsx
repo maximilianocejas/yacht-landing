@@ -8,22 +8,27 @@ export default function Benefits(){
 
     useEffect(()=>{
         let tl = gsap.timeline()
-        tl.from('.scroll-1',{
-            top: 0,
+        let mm = gsap.matchMedia()
+
+        mm.add("(min-width: 768px)",()=>{
+            tl.from('.scroll-1',{
+                top: 0,
+            })
+            tl.from('.scroll-2',{
+                top: '100%',
+            })
+            tl.from('.scroll-3',{
+                top: '100%'
+            })
+            tl.to('.scroll-2',{
+                top: 0,
+                
+            })
+            tl.to('.scroll-3',{
+                top: 0,
+            })
         })
-        tl.from('.scroll-2',{
-            top: '100%',
-        })
-        tl.from('.scroll-3',{
-            top: '100%'
-        })
-        tl.to('.scroll-2',{
-            top: 0,
-            
-        })
-        tl.to('.scroll-3',{
-            top: 0,
-        })
+        
 
 
 

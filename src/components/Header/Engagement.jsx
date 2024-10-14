@@ -7,35 +7,41 @@ gsap.registerPlugin(ScrollTrigger)
 export default function Engagement(){
     useEffect(()=>{
         let tl = gsap.timeline()
+        let mm = gsap.matchMedia()
 
-        tl.to('.words-1',{
-            top: '10px',
-            duration: 0.85,
-            ease: 'power1.inOut'
-            
+
+        mm.add("(min-width: 768px)", ()=>{
+            tl.to('.words-1',{
+                top: '10px',
+                duration: 0.85,
+                ease: 'power1.inOut'
+                
+            })
+            tl.to('.words-2',{
+                top: '10px',
+                duration: 0.85,
+                ease: 'power1.inOut',
+                animationDelay: '300ms'
+            },0)
+            tl.to('.words-3',{
+                top: '10px',
+                duration: 0.85,
+                ease: 'power1.inOut',
+                animationDelay: '300ms'
+                
+            },0)
+    
+    
+            ScrollTrigger.create({
+                animation: tl,
+                trigger: '.words-section',
+                start: 'center bottom',
+                end: 'bottom bottom',
+                
+            })
         })
-        tl.to('.words-2',{
-            top: '10px',
-            duration: 0.85,
-            ease: 'power1.inOut',
-            animationDelay: '300ms'
-        },0)
-        tl.to('.words-3',{
-            top: '10px',
-            duration: 0.85,
-            ease: 'power1.inOut',
-            animationDelay: '300ms'
-            
-        },0)
-
-
-        ScrollTrigger.create({
-            animation: tl,
-            trigger: '.words-section',
-            start: 'center bottom',
-            end: 'bottom bottom',
-            markers: true
-        })
+        
+        
     },[])
 
     return(
