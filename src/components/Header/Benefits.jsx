@@ -7,10 +7,11 @@ gsap.registerPlugin(ScrollTrigger)
 export default function Benefits(){
 
     useEffect(()=>{
-        let tl = gsap.timeline()
+        
         let mm = gsap.matchMedia()
 
         mm.add("(min-width: 768px)",()=>{
+            let tl = gsap.timeline()
             tl.from('.scroll-1',{
                 top: 0,
             })
@@ -27,19 +28,46 @@ export default function Benefits(){
             tl.to('.scroll-3',{
                 top: 0,
             })
+            ScrollTrigger.create({
+                animation: tl,
+                trigger: '.scroll-container',
+                start: "top top",
+                end: "+=2800",
+                scrub: 2,
+                pin: true
+            })
+        })
+        
+        mm.add("(max-width: 767px)",()=>{
+            let tl = gsap.timeline()
+            tl.from('.scroll-1',{
+                top: 0,
+            })
+            tl.from('.scroll-2',{
+                top: '100%',
+            })
+            tl.from('.scroll-3',{
+                top: '100%'
+            })
+            tl.to('.scroll-2',{
+                top: 0,
+                
+            })
+            tl.to('.scroll-3',{
+                top: 0,
+            })
+            ScrollTrigger.create({
+                animation: tl,
+                trigger: '.scroll-container',
+                start: "top top",
+                end: "+=1900",
+                scrub: 2,
+                pin: true
+            })
         })
         
 
 
-
-        ScrollTrigger.create({
-            animation: tl,
-            trigger: '.scroll-container',
-            start: "top top",
-            end: "+=2800",
-            scrub: 2,
-            pin: true
-        })
 
     },[])
     return(

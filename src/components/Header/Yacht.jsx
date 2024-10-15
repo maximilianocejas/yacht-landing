@@ -35,10 +35,10 @@ export default function Yacht(){
                 </ul>
             </nav>
             <div className="h-[calc(100%-80px)] w-full relative flex justify-center items-center ">
-                <img className="z-10 aspect-auto" src={img} alt="" />
+                <img className="z-10 aspect-auto max-w-[80%]" src={img} alt="" />
                 <div className="yacht-radial"></div>
             </div>
-            <div className="pl-[120px]">
+            <div className="pl-4 md:pl-[120px]">
             <button className="button__black">
              contactarse ahora
               <img

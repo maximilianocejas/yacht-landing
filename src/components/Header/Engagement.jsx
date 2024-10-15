@@ -45,7 +45,7 @@ export default function Engagement(){
     },[])
 
     return(
-        <section className="h-screen w-full relative words-section flex flex-col gap-y-8 px-4 pt-10 sm:block sm:px-0">
+        <section className="h-fit py-20 md:h-screen w-full relative words-section flex flex-col gap-y-8 px-4 sm:py-0 sm:pt-10 sm:block sm:px-0">
  
             <div style={{fontSize: '3rem'}} className="absolute left-36 top-20 pt-4 z-10 text-secondary font-[350] tracking-tighter leading-[0.2] hidden sm:block">
            
