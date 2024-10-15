@@ -45,9 +45,9 @@ export default function Engagement(){
     },[])
 
     return(
-        <section className="h-screen w-full relative words-section">
+        <section className="h-screen w-full relative words-section flex flex-col gap-y-8 px-4 pt-10 sm:block sm:px-0">
  
-            <div style={{fontSize: '3rem'}} className="absolute left-36 top-20 pt-4 z-10 text-secondary font-[350] tracking-tighter leading-[0.2]">
+            <div style={{fontSize: '3rem'}} className="absolute left-36 top-20 pt-4 z-10 text-secondary font-[350] tracking-tighter leading-[0.2] hidden sm:block">
            
             <div className="h-[37px] w-[650px] overflow-hidden relative">
             <span className="words-animate words-1 absolute top-[160%] left-0">Navega por las mejores aguas</span>
@@ -64,7 +64,10 @@ export default function Engagement(){
             </div>
 
             </div>
-            <img className="w-2/4 object-cover absolute right-20 top-1/4" src="./images/info-img.svg" alt="" />
+            <p className="text-secondary text-2xl font-light">
+            Navega por las mejores aguas del mundo y<br/> vive las mejores experiencias de tu vida.
+            </p>
+            <img className="w-full aspect-auto sm:w-2/4 sm:object-cover sm:absolute sm:right-20 sm:top-1/4" src="./images/info-img.svg" alt="" />
            
             
         </section>

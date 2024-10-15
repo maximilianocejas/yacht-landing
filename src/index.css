@@ -109,3 +109,12 @@ body.no-scroll{
   height: 600px;
   background: radial-gradient(circle, rgba(35, 92, 197, 0.35) 0%, #FFFFFF 70%);
 }
+
+@media (max-width: 767px){
+  .yacht-radial{
+     top: calc(50% - 150px);
+  left: calc(50% - 200px);
+  width: 400px;
+  height: 400px;
+  }
+}

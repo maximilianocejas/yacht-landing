@@ -17,9 +17,9 @@ export default function Yacht(){
     }
     return(
         <section className="h-screen w-full bg-white">
-            <h2 className="text-black font-normal text-3xl pt-16 pb-8 text-center">Explora nuestros productos en tendencias</h2>
+            <h2 className="text-secondary font-normal text-xl sm:text-3xl pt-16 pb-8 text-center">Explora nuestros productos en tendencias</h2>
             <nav className="h-20 w-full ">
-                <ul className="flex w-full h-full justify-center items-center gap-x-16 text-2xl font-light z-10 relative">
+                <ul className="flex w-full h-full justify-center items-center gap-x-4 text-lg sm:gap-x-16 sm:text-2xl font-light z-10 relative">
                     <li className={indexCurrent.current === 1 ? 'border-b-[1px] border-black':null}>
                         <button onClick={handleYacthSelect} data-yacht="1">65 SPORT</button>
                     </li>
@@ -35,7 +35,7 @@ export default function Yacht(){
                 </ul>
             </nav>
             <div className="h-[calc(100%-80px)] w-full relative flex justify-center items-center ">
-                <img className="z-10" src={img} alt="" />
+                <img className="z-10 aspect-auto" src={img} alt="" />
                 <div className="yacht-radial"></div>
             </div>
             <div className="pl-[120px]">
