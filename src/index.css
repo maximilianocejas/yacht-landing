@@ -112,9 +112,10 @@ body.no-scroll{
 
 @media (max-width: 767px){
   .yacht-radial{
-     top: calc(50% - 150px);
-  left: calc(50% - 200px);
-  width: 400px;
-  height: 400px;
+     top: calc(50% - 55px);
+  left: calc(50% -  90px);
+  width: 180px;
+  height: 180px;
+
   }
 }

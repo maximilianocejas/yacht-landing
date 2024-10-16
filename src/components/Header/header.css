@@ -120,7 +120,7 @@
 }
   
     .header__button{
-        margin-top: 50px;
+        margin-top: 16px;
     }
     .hero{
         padding: 0 16px;
@@ -128,17 +128,17 @@
     
     .hero__title{
         text-transform: uppercase;
-        font-size: 4.5rem;
+        font-size: 5rem;
         font-weight: 300;
     }
     
     .hero__subtitle{
-        top: 120%;
-        left: 50%;
+        top:auto;
+        left: auto;
         width: 100%;
-        font-size: 0.8rem;
+        font-size: 1rem;
         font-weight: 300;
-        transform: translate(-50%, -50%)
+        transform: none
     }
     .video{
         clip-path:  inset(0px calc(1.33% - 18.33px) 0px round 8px);

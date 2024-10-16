@@ -65,7 +65,23 @@ export default function Header() {
     });
   });
 
-  
+  mm.add("(max-width:767px)",()=>{
+    let video = document.querySelector(".video");
+    
+
+
+
+
+    ScrollTrigger.create({
+      trigger: ".video__section",
+      start: "center bottom",
+      onEnter: ()=>{
+        if(video){
+          video.play()
+        }
+      }
+    })
+  })
 }, []);
       
     
@@ -75,18 +91,18 @@ export default function Header() {
         <div className="sm:absolute w-full h-screen sm:top-0 sm:left-0">
         <Nav/>
         <NavMobile/>
-        <section className="hero flex justify-center items-center w-full pt-20 sm:pt-0">
-          <div className="hero__text-container mx-auto w-full flex justify-center flex-col items-center">
-            <div className="relative">
+        <section className="hero flex justify-center items-center w-full pt-20 sm:pt-0 h-full">
+          <div className="hero__text-container mx-auto w-full h-full md:h-auto flex flex-col items-center justify-center">
+            <div className="relative flex flex-col  gap-y-2 md:gap-y-0 h-fit items-center justify-center md:block">
             <h1 className="hero__title">seaway</h1>
-            <h2 className="hero__subtitle text-center absolute ">
+            <h2 className="hero__subtitle text-center  md:absolute ">
               Obtén la mejor calidad y las mejores experiencias
               <br /> con nuestros yates de lujo
             </h2>
             </div>
             
             
-            <button className="button__black header__button">
+            <button className="button__black header__button pb-8 md:mb-0">
               contactarse ahora
               <img
                 className="button__black-icon"
@@ -100,7 +116,7 @@ export default function Header() {
         </div>
 
     {/* Scroll video */}
-    <section className="video__section h-screen w-full sm:h-full sm:w-full sm:absolute">
+    <section className="video__section  h-screen w-full sm:h-full sm:w-full sm:absolute">
       <div className="h-full w-full relative flex flex-col justify-center items-center">
       <div className="overlay absolute w-full h-full top-0 left-0"></div>
         <video className="video h-full w-full object-cover absolute top-0 left-0" muted loop>
