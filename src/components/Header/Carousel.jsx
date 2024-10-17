@@ -45,10 +45,10 @@ export default function Carousel() {
                     </div>
                    </div>
                    </div>
-                <div id="before" className="absolute size-[100px] cursor-pointer flex justify-center items-center rounded-full bg-secondary bg-blur left-10 opacity-70 hover:opacity-100 next-button">
+                <div aria-label="Anterior imagen" id="before" className="absolute size-[100px] cursor-pointer flex justify-center items-center rounded-full bg-secondary bg-blur left-10 opacity-70 hover:opacity-100 next-button">
                     <img className="rotate-180" src="./icons/arrow-white-lg.svg" alt="" />
                 </div>
-                <div id="next" className="absolute size-[100px] cursor-pointer flex justify-center items-center rounded-full bg-secondary bg-blur top-[calc(50%-50px)] opacity-70 hover:opacity-100 right-10 before-button">
+                <div aria-label="Siguiente imagen" id="next" className="absolute size-[100px] cursor-pointer flex justify-center items-center rounded-full bg-secondary bg-blur top-[calc(50%-50px)] opacity-70 hover:opacity-100 right-10 before-button">
                     <img src="./icons/arrow-white-lg.svg" alt="" />
                 </div>
             </article>

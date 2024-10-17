@@ -55,7 +55,7 @@ body.no-scroll{
   overflow: hidden;
 }
 .button__black{
-  display: flex;
+  display: inline-flex;
   justify-content: center;
   align-items: center;
   background-color: transparent;
@@ -67,7 +67,7 @@ body.no-scroll{
   padding: 12px 20px;
 }
 .button__white{
-  display: flex;
+  display: inline-flex;
   justify-content: center;
   align-items: center;
   background-color: transparent;
@@ -115,18 +115,3 @@ body.no-scroll{
   background-size: cover;
 }
 
-
-.yacht-radial{
-  position: absolute;
-  top: calc(50% - 200px);
-  left: calc(50% - 300px);
-  width: 600px;
-  height: 600px;
-  background: radial-gradient(circle, rgba(35, 92, 197, 0.35) 0%, #FFFFFF 70%);
-}
-
-@media (max-width: 767px){
-  .yacht-radial{
-     display: none;
-  }
-}

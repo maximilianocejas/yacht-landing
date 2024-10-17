@@ -122,7 +122,7 @@ export default function Header() {
         <video className="video h-full w-full object-cover absolute top-0 left-0" muted loop>
           <source src="/video/video.mp4" type="video/mp4" />
         </video>
-        <div className="video__content-container sm:hidden justify-center items-center flex-col z-10">
+        <div className="video__content-container w-full sm:hidden justify-center items-center flex flex-col z-10">
           <h2 className="video__content-text">
             ¡No pierdas mas tiempo!
             <br /> Navega de forma rápida y segura

@@ -34,9 +34,9 @@ export default function Yacht(){
                     </li>
                 </ul>
             </nav>
-            <div className="h-fit md:h-[calc(100%-80px)] w-full relative flex justify-center items-center ">
+            <div className="h-fit px-4 md:h-[calc(100%-80px)] w-full relative flex justify-center items-center md:px-0">
                 <img className="z-10 aspect-auto h-32 md:h-auto md:max-w-[80%]" src={img} alt="" />
-                <div className="yacht-radial"></div>
+                
             </div>
             <div className="pl-4 pt-16 md:pt-0 md:pl-[120px]">
             <a target="_BLANK" href="https://www.linkedin.com/in/maximiliano-cejas/" className="button__black">

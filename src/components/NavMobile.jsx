@@ -29,16 +29,16 @@ export default function NavMobile(){
         </div>
         <div className={`h-screen w-full bg-[#C2C6C9] pt-8 px-4 uppercase text-4xl font-light transition-all duration-1000 ease-in-out absolute left-0 z-10 ${showNav?'translate-y-0':'-translate-y-[120%]'}`}>
                     <ul className="flex flex-col gap-y-2">
-                        <li>
+                        <li onClick={handleShowNav}>
                             <a href="#inicio">Inicio</a>
                         </li>
-                        <li>
+                        <li onClick={handleShowNav}>
                             <a href="#yates">Yates</a>
                         </li>
-                        <li>
+                        <li onClick={handleShowNav}>
                             <a href="#galeria">Galería</a>
                         </li>
-                        <li>
+                        <li onClick={handleShowNav}>
                             <a href="#beneficios">Beneficios</a>
                         </li>
                         

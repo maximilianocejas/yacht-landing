@@ -64,7 +64,7 @@ export default function Engagement(){
             </div>
 
             </div>
-            <p className="text-secondary text-2xl font-light md:hidden">
+            <p className="text-secondary text-lg font-light md:hidden text-balance">
             Navega por las mejores aguas del mundo y<br/> vive las mejores experiencias de tu vida.
             </p>
             <img className="w-full aspect-auto sm:w-2/4 sm:object-cover sm:absolute sm:right-20 sm:top-1/4" src="./images/info-img.svg" alt="" />
