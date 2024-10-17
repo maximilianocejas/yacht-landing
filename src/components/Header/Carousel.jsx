@@ -29,7 +29,7 @@ export default function Carousel() {
         
     },[])
     return (
-        <section className="h-screen bg-primary w-full mt-96">
+        <section className="h-screen bg-primary w-full mt-96" id="galeria">
             <article className="relative h-full flex items-center w-full bg-primary overflow-hidden">
 
                 <div className=" w-full h-full" >

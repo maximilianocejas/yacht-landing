@@ -16,7 +16,7 @@ export default function Yacht(){
         
     }
     return(
-        <section className="h-80 md:h-screen w-full bg-white">
+        <section className="h-80 md:h-screen w-full bg-white" id="yates">
             <h2 className="text-secondary font-normal text-lg sm:text-3xl pt-16 pb-8 text-center">Explora nuestros productos en tendencias</h2>
             <nav className="h-20 w-full ">
                 <ul className="flex w-full h-full justify-center items-center gap-x-4 text-sm sm:gap-x-16 sm:text-2xl font-light z-10 relative">
@@ -39,14 +39,14 @@ export default function Yacht(){
                 <div className="yacht-radial"></div>
             </div>
             <div className="pl-4 pt-16 md:pt-0 md:pl-[120px]">
-            <button className="button__black">
+            <a target="_BLANK" href="https://www.linkedin.com/in/maximiliano-cejas/" className="button__black">
              contactarse ahora
               <img
                 className="button__black-icon"
                 src="/icons/arrow-black.svg"
                 alt="Arrow black"
               />
-            </button>
+            </a>
             </div>
         </section>
     )

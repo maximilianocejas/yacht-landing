@@ -34,8 +34,23 @@
   list-style: none;
   text-decoration: none;
   color: var(--color-secondary);
+  scroll-behavior: smooth;
+}
+.text-loader{
+  animation: intervalView 1s ease-in-out infinite;
 }
 
+@keyframes intervalView {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.8;
+  }
+  100% {
+    opacity: 0;
+  }
+}
 body.no-scroll{
   overflow: hidden;
 }
@@ -112,10 +127,6 @@ body.no-scroll{
 
 @media (max-width: 767px){
   .yacht-radial{
-     top: calc(50% - 55px);
-  left: calc(50% -  90px);
-  width: 180px;
-  height: 180px;
-
+     display: none;
   }
 }

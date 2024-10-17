@@ -87,7 +87,7 @@ export default function Header() {
     
   return (
     <>
-      <header className="header">
+      <header className="header" id="inicio">
         <div className="sm:absolute w-full h-screen sm:top-0 sm:left-0">
         <Nav/>
         <NavMobile/>
@@ -95,21 +95,21 @@ export default function Header() {
           <div className="hero__text-container mx-auto w-full h-full md:h-auto flex flex-col items-center justify-center">
             <div className="relative flex flex-col  gap-y-2 md:gap-y-0 h-fit items-center justify-center md:block">
             <h1 className="hero__title">seaway</h1>
-            <h2 className="hero__subtitle text-center  md:absolute ">
+            <h2 className="hero__subtitle text-center md:absolute">
               Obtén la mejor calidad y las mejores experiencias
               <br /> con nuestros yates de lujo
             </h2>
             </div>
             
             
-            <button className="button__black header__button pb-8 md:mb-0">
+            <a target="_BLANK" href="https://www.linkedin.com/in/maximiliano-cejas/" className="button__black header__button pb-8 md:mb-0">
               contactarse ahora
               <img
                 className="button__black-icon"
                 src="/icons/arrow-black.svg"
                 alt="Arrow black"
               />
-            </button>
+            </a>
           </div>
         </section>
 
@@ -127,14 +127,14 @@ export default function Header() {
             ¡No pierdas mas tiempo!
             <br /> Navega de forma rápida y segura
           </h2>
-          <button className="button__white button-video overflow-hidden">
+          <a target="_BLANK" href="https://www.linkedin.com/in/maximiliano-cejas/" className="button__white button-video overflow-hidden">
             reservar ahora
             <img
               className="button__white-icon"
               src="/icons/arrow-white.svg"
               alt="Arrow white"
             />
-          </button>
+          </a>
         </div>
       </div>
 

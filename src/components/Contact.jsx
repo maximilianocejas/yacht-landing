@@ -7,14 +7,14 @@ export default function Contact(){
                 experiencia unica
                 
             </h3>
-            <button className="button__black">
+            <a target="_BLANK" href="https://www.linkedin.com/in/maximiliano-cejas/" className="button__black">
              contactarse ahora
               <img
                 className="button__black-icon"
                 src="/icons/arrow-black.svg"
                 alt="Arrow black"
               />
-            </button>
+            </a>
         </section>
     )
 }
