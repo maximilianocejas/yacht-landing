@@ -35,21 +35,21 @@ export default function Carousel() {
                 <div className=" w-full h-full" >
                     <div className=" flex carousel-inner duration-1000 ease-in-out w-full h-full">
                    <div className="flex-none carousel-item w-full h-full relative">
-                        <img className="w-full h-full object-cover" src="./images/carousel/1.avif" alt="Servicio 1" />
+                        <img className="w-full h-full object-cover" src="./images/carousel/1.avif" alt="Barco en oceano"/>
                     </div>
                     <div className="flex-none carousel-item w-full h-full relative">
-                        <img className="w-full h-full object-cover" src="./images/carousel/2.avif" alt="Servicio 2" />
+                        <img className="w-full h-full object-cover" src="./images/carousel/2.avif" alt="Pareja en barco" />
                     </div>
                     <div className="flex-none carousel-item w-full h-full relative">
-                        <img className="w-full h-full object-cover" src="./images/carousel/3.avif" alt="Servicio 3" />
+                        <img className="w-full h-full object-cover" src="./images/carousel/3.avif" alt="Vista hacia el oceano" />
                     </div>
                    </div>
                    </div>
                 <div aria-label="Anterior imagen" id="before" className="absolute size-[100px] cursor-pointer flex justify-center items-center rounded-full bg-secondary bg-blur left-10 opacity-70 hover:opacity-100 next-button">
-                    <img className="rotate-180" src="./icons/arrow-white-lg.svg" alt="" />
+                    <img className="rotate-180" src="./icons/arrow-white-lg.svg" alt="Flecha de anterior" />
                 </div>
                 <div aria-label="Siguiente imagen" id="next" className="absolute size-[100px] cursor-pointer flex justify-center items-center rounded-full bg-secondary bg-blur top-[calc(50%-50px)] opacity-70 hover:opacity-100 right-10 before-button">
-                    <img src="./icons/arrow-white-lg.svg" alt="" />
+                    <img src="./icons/arrow-white-lg.svg" alt="Flecha de siguiente" />
                 </div>
             </article>
         </section>

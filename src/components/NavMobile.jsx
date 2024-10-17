@@ -20,7 +20,7 @@ export default function NavMobile(){
         <div className="relative w-screen h-full">
         <div className="bg-primary text-secondary flex w-full h-full relative z-20 px-4">
         <div className="flex items-center w-full">
-                <a className={`text-2xl  ${showNav && 'opacity-30'}`} href="/">Seaway</a>
+                <a className={`text-2xl  ${showNav && 'opacity-30'}`} href="/" aria-label="Logo de la pagina">Seaway</a>
             </div>
             <div className="flex items-center w-full justify-end h-full">
                 <button className="uppercase text-xs" onClick={handleShowNav}>{showNav?'Cerrar':'Menú'}</button>

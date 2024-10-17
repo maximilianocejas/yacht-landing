@@ -102,12 +102,12 @@ export default function Header() {
             </div>
             
             
-            <a target="_BLANK" href="https://www.linkedin.com/in/maximiliano-cejas/" className="button__black header__button pb-8 md:mb-0">
+            <a target="_BLANK" href="https://www.linkedin.com/in/maximiliano-cejas/" className="button__black header__button pb-8 md:mb-0" aria-label="Boton de contacto">
               contactarse ahora
               <img
                 className="button__black-icon"
                 src="/icons/arrow-black.svg"
-                alt="Arrow black"
+                alt="Flecha negra"
               />
             </a>
           </div>
@@ -120,7 +120,7 @@ export default function Header() {
       <div className="h-full w-full relative flex flex-col justify-center items-center">
       <div className="overlay absolute w-full h-full top-0 left-0"></div>
         <video className="video h-full w-full object-cover absolute top-0 left-0" muted loop>
-          <source src="/video/video.mp4" type="video/mp4" />
+          <source src="/video/video.mp4" type="video/mp4"/>
         </video>
         <div className="video__content-container w-full sm:hidden justify-center items-center flex flex-col z-10">
           <h2 className="video__content-text">
@@ -132,7 +132,8 @@ export default function Header() {
             <img
               className="button__white-icon"
               src="/icons/arrow-white.svg"
-              alt="Arrow white"
+              alt="Flecha blanca"
+              aria-label="Boton de contacto"
             />
           </a>
         </div>

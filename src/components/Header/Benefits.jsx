@@ -82,7 +82,7 @@ export default function Benefits(){
             <img
               className="button__white-icon"
               src="/icons/arrow-white.svg"
-              alt="Arrow white"
+              alt="Flecha blanca"
             />
           </a>
              </div>
@@ -97,7 +97,7 @@ export default function Benefits(){
             <img
               className="button__white-icon"
               src="/icons/arrow-white.svg"
-              alt="Arrow white"
+              alt="Flecha blanca"
             />
           </a>
         </div>
@@ -113,7 +113,8 @@ export default function Benefits(){
             <img
               className="button__white-icon"
               src="/icons/arrow-white.svg"
-              alt="Arrow white"
+              alt="Flecha blanca"
+              aria-label="Boton de contacto"
             />
           </a>
                </div>

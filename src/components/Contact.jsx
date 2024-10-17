@@ -12,7 +12,7 @@ export default function Contact(){
               <img
                 className="button__black-icon"
                 src="/icons/arrow-black.svg"
-                alt="Arrow black"
+                alt="Flecha negra"
               />
             </a>
         </section>

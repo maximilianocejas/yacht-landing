@@ -21,21 +21,21 @@ export default function Yacht(){
             <nav className="h-20 w-full ">
                 <ul className="flex w-full h-full justify-center items-center gap-x-4 text-sm sm:gap-x-16 sm:text-2xl font-light z-10 relative">
                     <li className={indexCurrent.current === 1 ? 'border-b-[1px] border-black':null}>
-                        <button onClick={handleYacthSelect} data-yacht="1">65 SPORT</button>
+                        <button onClick={handleYacthSelect} data-yacht="1" aria-label="Seleccionar yate numero 1">65 SPORT</button>
                     </li>
                     <li className={indexCurrent.current === 2 ? 'border-b-[1px] border-black':null}>
-                        <button onClick={handleYacthSelect} data-yacht="2">1000 SKY DECK</button>
+                        <button onClick={handleYacthSelect} data-yacht="2" aria-label="Seleccionar yate numero 2">1000 SKY DECK</button>
                     </li>
                     <li className={indexCurrent.current === 3 ? 'border-b-[1px] border-black':null}>
-                        <button onClick={handleYacthSelect} data-yacht="3">B.NOW 67M</button>
+                        <button onClick={handleYacthSelect} data-yacht="3" aria-label="Seleccionar yate numero 3">B.NOW 67M</button>
                     </li>
                     <li className={indexCurrent.current === 4 ? 'border-b-[1px] border-black':null}>
-                        <button onClick={handleYacthSelect} data-yacht="4">SEADECK 6</button>
+                        <button onClick={handleYacthSelect} data-yacht="4" aria-label="Seleccionar yate numero 4">SEADECK 6</button>
                     </li>
                 </ul>
             </nav>
             <div className="h-fit px-4 md:h-[calc(100%-80px)] w-full relative flex justify-center items-center md:px-0">
-                <img className="z-10 aspect-auto h-32 md:h-auto md:max-w-[80%]" src={img} alt="" />
+                <img className="z-10 aspect-auto h-32 md:h-auto md:max-w-[80%]" src={img} alt="Yate de lujo vista previa" />
                 
             </div>
             <div className="pl-4 pt-16 md:pt-0 md:pl-[120px]">
@@ -44,7 +44,8 @@ export default function Yacht(){
               <img
                 className="button__black-icon"
                 src="/icons/arrow-black.svg"
-                alt="Arrow black"
+                alt="Flecha negra"
+                aria-label="Boton de contacto"
               />
             </a>
             </div>
